@@ -1,0 +1,33 @@
+{
+  "name": "simmer",
+  "version": "0.1.0",
+  "description": "JavaScript utlity for reducing input through an array of functions",
+  "license": "MIT",
+  "repository": "https://github.com/paulmolluzzo/simmer",
+  "author": {
+    "name": "Paul Molluzzo",
+    "email": "paul@molluzzo.com",
+    "url": "https://paul.molluzzo.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "lint": "standard | snazzy",
+    "format": "prettier-standard **/*.js",
+    "test": "jest --coverage",
+    "dev": "jest --coverage --watchAll"
+  },
+  "keywords": [
+    "javascript",
+    "reducer"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^22.2.2",
+    "prettier": "^1.10.2",
+    "prettier-standard": "^8.0.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  }
+}

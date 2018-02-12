@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`simmer it handles errors in complex scenarios 1`] = `[TypeError: Cannot read property 'a' of undefined]`;
+
+exports[`simmer it handles errors in the example in the README 1`] = `[Error: Titles should be removed!]`;
+
+exports[`simmer it handles the example in the README 1`] = `
+Object {
+  "firstName": "Paul",
+  "fullName": "Paul Molluzzo",
+  "lastName": "Molluzzo",
+  "twitter": "https://twitter.com/paulmolluzzo",
+}
+`;
