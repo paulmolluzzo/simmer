@@ -94,7 +94,7 @@ curriedExample({
 
 ## Acknowledgements
 
-This work is heavily inspired by [DataPoint](https://github.com/ViacomInc/data-point/), in particular the `ListReducer`, `FunctionReducer`, and enlightening discussions with [Acatl Pacheco](https://github.com/acatl) and [Matthew Armstrong](https://github.com/raingerber). ????????
+This work is heavily inspired by [DataPoint](https://github.com/ViacomInc/data-point/), in particular the `ListReducer`, `FunctionReducer`, and enlightening discussions with [Acatl Pacheco](https://github.com/acatl) and [Matthew Armstrong](https://github.com/raingerber). 🙌🙌🙌
 
 ## License
 
