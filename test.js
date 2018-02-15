@@ -285,4 +285,18 @@ describe('simmer', () => {
       expect(error).toMatchSnapshot()
     })
   })
+
+  test('it successfully handles async functions', () => {
+    const asyncFn = jest.fn(input => {
+      return new Promise(resolve => {
+        // on the next tick of the event loop it'll add 1 to the input value
+        process.nextTick(() => resolve(input + 1))
+      })
+    })
+
+    return simmer([asyncFn, asyncFn, asyncFn], 1).then(result => {
+      expect(asyncFn).toHaveBeenCalledTimes(3)
+      expect(result).toBe(4)
+    })
+  })
 })
