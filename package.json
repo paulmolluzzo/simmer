@@ -13,6 +13,8 @@
     "node": ">=6"
   },
   "scripts": {
+    "precommit": "lint-staged",
+    "commit": "git-cz",
     "lint": "standard | snazzy",
     "format": "prettier-standard **/*.js",
     "test": "jest --coverage",
@@ -24,10 +26,26 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
     "jest": "^22.2.2",
+    "lint-staged": "^6.1.0",
     "prettier": "^1.10.2",
     "prettier-standard": "^8.0.0",
     "snazzy": "^7.0.0",
     "standard": "^10.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-standard",
+      "git add",
+      "standard",
+      "jest --bail --findRelatedTests"
+    ]
   }
 }
