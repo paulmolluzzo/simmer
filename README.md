@@ -1,4 +1,4 @@
-# simmer 🍳
+# simmer 🍳 [![Build Status](https://travis-ci.org/paulmolluzzo/simmer.svg?branch=master)](https://travis-ci.org/paulmolluzzo/simmer)
 
 > Put something in, reduce it down, and use the output
 
@@ -11,7 +11,7 @@ $ npm install --save simmer
 ## Usage
 
 ```js
-const simmer = require('simmer');
+const simmer = require('simmer')
 const addExclamation = i => i + '!'
 
 simmer([i => `Hello ${i}`, addExclamation], 'World') // 'Hello World!'
